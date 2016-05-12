@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context=".MainActivityFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/btnLogin"
+        android:layout_centerVertical="true"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignRight="@+id/btnLogin"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="账号"
+        android:id="@+id/iptUsername"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/iptPassword"
+        android:layout_below="@+id/iptUsername"
+        android:layout_alignLeft="@+id/iptUsername"
+        android:layout_alignStart="@+id/iptUsername"
+        android:layout_alignRight="@+id/iptUsername"
+        android:layout_alignEnd="@+id/iptUsername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/error"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:editable="false"/>
+
+</RelativeLayout>
